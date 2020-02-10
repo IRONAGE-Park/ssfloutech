@@ -1,0 +1,51 @@
+#header {
+    /* 헤더, 네비게이션 바의 배치와 최소 크기 내부 크기 설정 */
+    width: 90%;
+    /* 헤더가 베너에 속해있을 때 적용될 디자인 */
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(255, 255, 255, 0));
+    border-bottom: solid 1.5px #33A495;
+    color: white;
+    line-height: 77px;
+    position: fixed;
+    padding: 0 5%;
+    z-index: 900; /* 헤더를 앞쪽에(다른 요소에 가려지지 않게) 보여주기 위해 z축 위치 선언 */
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+#header.out {
+    /* 헤더가 베너에서 벗어났을때 적용될 디자인 */
+    background: #F3F3F3;
+    color: black;
+    line-height: 55px;
+}
+#header * { vertical-align: middle; color: inherit; } /* 헤더 내의 모든 요소를 수직 중앙 정렬 */
+#header .header_logo { float: left; } /* 로고를 왼쪽에 배치 */
+#header .header_logo .header_image { width: 100px; height: 30px; }
+#header .header_logo .logo_font {
+    /* 로고 우측의 회사 명 크기와 컬러 설정 */
+    font-size: 2em;
+}
+#header a { text-decoration: none; }
+#header .navi { float: right; } /* 네비게이션 바를 오른쪽에 배치 */
+#header .navi .navi_font { display: inline-block; margin: 0 25px; position: relative; font-size: 1.4em; }
+#header .navi .navi_font.on::after {
+    /* 각 버튼의 아래쪽(현재 위치를 가르쳐주는 화살표) css 선언 */
+    content: url('../images/navi_pointer.svg');
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    line-height: 0;
+}
+
+/* 화면사이즈마다 다르게 적용되기 위함 */
+@media screen and (max-width: 900px) {
+    #header { background: rgba(0, 0, 0, 0); width: 100%; padding: 0; text-align: center; line-height: 55px;} /* 배경에 그라데이션 삭제 */
+    #header .header_logo, #header .navi  { float: none; display: block; } /* 로고를 위로 옮김 */
+    #header .navi .navi_font { margin: 0 15px; font-size: 1em; }
+    #header .header_logo { margin-top: 20px; line-height: 20px; }
+    #header .header_logo .logo_font { display: block; font-size: 1.4em; }
+    #header .header_logo .header_image { width: 80px; }
+    #header.mobileOut { background: #F3F3F3; color: black; line-height: 55px; } /* 모바일에서는 조금만 내려도 흰색 배경으로 변경 */
+}

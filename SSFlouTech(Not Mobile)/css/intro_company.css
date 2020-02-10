@@ -1,0 +1,63 @@
+#main #intro_company {
+    /* 회사 소개 페이지의 기본 css */
+    padding: 10% 0;
+    background-color: #F3F3F3;
+    text-align: center;
+    overflow: hidden; /* 범위 초과 시 열람 불가 */
+    white-space: nowrap; /* 줄바꿈 제거 */
+}
+#main #intro_company p {
+    /* 제목 아래 큰 설명 css */
+    white-space: normal;
+    word-break: keep-all;
+    font-size: 46px;
+    margin: 0;
+    margin-bottom: 5%;
+}
+.subText {
+    /* 제목 아래 작은 설명 css */
+    font-size: 1.5vw;
+    line-height: 3vw;
+    font-weight: 300;
+    margin-bottom: 15%;
+}
+#main #intro_company .intro_company_logo { width: 500px; }
+#main #intro_company .intro_company_name { 
+    margin-bottom: 2%; 
+    font-size: 100px;
+}
+.introCompanyBlock {
+    /* 회사 소개를 위한 요소들을 담은(이미지와 텍스트) 블록 css */
+    position: relative;
+    margin-bottom: 5%;
+}
+
+/* 블록 내부 이미지와 텍스트 css, 이미지를 기준으로 양측 상단부터 써내려감 */
+.introCompanyImage { width: 40%; vertical-align: top; }
+.introCompanyText {
+    display: inline-block;
+    width: 40%;
+    padding-top: 5%;
+}
+.Left { text-align: left; padding-left: 44px; } /* 이미지의 좌측에 텍스트가 써질 경우 */
+.Right { text-align: right; padding-right: 44px; } /* 이미지의 우측에 텍스트가 써질 경우 */
+.blockTitle {
+    /* 각 블록의 제목 */
+    display: inline-block;
+    font-size: 4vw;
+    font-weight: bold;
+}
+.underLine {
+    /* 블록의 제목 아래에 있는 underbar */
+    border: 4px solid #50BCAE;
+    margin: 44px 0px;
+}
+.blockSubTitle {
+    /* 블록 소제목 */
+    font-size: 2.2vw;
+    margin-bottom: 5%;
+}
+.blockSubText {
+    /* 블록의 부가 설명 */
+    font-size: 1.5vw;
+}

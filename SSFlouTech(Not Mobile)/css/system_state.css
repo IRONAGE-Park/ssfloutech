@@ -1,0 +1,28 @@
+#main #system_state { 
+    /* 설비 현황 페이지의 기본 css */
+    position: relative;
+    text-align: center;
+    background-color: #F3F3F3;
+    padding: 10% 0;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#system_state .title { margin-bottom: 15%; } /* 설비현황 페이지의 제목은 아랫 마진이 220px */
+.systemStateText .blockTitle { font-weight: 400; }
+.systemStateBlock {
+    margin-top: 10%;
+    padding: 0 !important; /* 좌우 이미지의 padding을 없애기 위해 사용 */
+}
+.systemStateImage {
+    /* 현황 이미지의 css */
+    vertical-align: top;
+    width: 60%;
+    position: relative;
+}
+.systemStateImage:hover { cursor: pointer; } /* 이미지를 클릭하면 팝업창이 뜬다는 것을 인지 시키기 위한 마우스 형태 변환 */
+.systemStateText {
+    /* 현황 설명 텍스트의 css */
+    display: inline-block;
+    position: relative;
+    margin-top: 5%;
+}

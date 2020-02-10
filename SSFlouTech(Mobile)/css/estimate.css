@@ -1,0 +1,90 @@
+/* 애니메이션을 위해 사용 */
+.hidden {
+    /* 애니메이션 효과를 위해서 안 보일 때 css 선언(다중 클래스 상속) */
+    opacity: 0;
+    pointer-events: none;
+}
+.move { transform: translate(-100vw); } /* 애니메이션 효과를 위해서 움직이는 css 선언 */
+
+/* 견적 문의 부분의 css */
+#estimate {
+    /* 전체 틀에 적용될 css */
+    padding: 20% 0;
+    text-align: center; 
+    position: relative;
+    overflow: hidden;
+}
+#estiView{
+    /* 견적 문의 방법 소개 부분 css*/
+    position: relative;
+    transition-property: all;
+    transition-duration: 0.5s;
+    min-height: 900px;
+}
+.response {
+    /* 실시간 응답률 background css */
+    width: 70%;
+    min-width: 320px;
+    max-width: 1084px;
+    background-color: #ECECEC;
+    color: white;
+    font-size: 2.3em;
+    height: 68px;
+    text-align: right;
+    margin: auto;
+    margin-bottom: 44px;
+}
+.response > .rate {
+    /* 실시간 응답률에서 실제 채워지는 %표시하는 바 css */
+    width: 0;
+    text-align: right;
+    background: linear-gradient(to left, #2D9E99, #175A7D);
+    line-height: 68px;
+    padding: 0 10px;
+    overflow: hidden;
+    white-space: nowrap;
+    transition-property: width; /* 크기 증가의 애니메이션 할당 */
+    transition-duration: 1.5s; /* 시작부터 1.5초간 애니메이션 실행 */
+}
+.block {
+    /* 상호작용 버튼의 전체적인 css */
+    display: inline-block;
+    background-repeat: no-repeat;
+    padding: 10px;
+    width: 320px;
+    height: 320px;
+    margin: 22px 16px;
+    color: white;
+    position: relative;
+    opacity: 0;
+    top: 200px;
+    transition-property: all; /* 아래쪽에서 올라오는 효과를 위해 선언 */
+    transition-duration: 1.5s; /* 위 퍼센트 증가와 같이 1.5초간 진행 */
+}
+.block > .action {
+    /* 견적 문의를 위한 수단의 css */
+    font-size: 3em;
+    text-align: left;
+}
+.block > .contact {
+    /* 견적 문의를 위한 수단(연락처)의 css */
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 2.5em;
+    font-weight: lighter;
+    text-shadow: 2px 2px 2px black; /* 잘 보이기 위한 그림자 선언 (x축 y축 넓이 뿌리기 색깔)  */
+    text-align: right;
+}
+/* 각 상호작용 버튼의 배경 이미지 셋팅 */
+#in_call { background-image: url('../images/call_company.png'); }
+#in_fax { background-image: url('../images/fax_company.png'); }
+#in_email { background-image: url('../images/email_company.png'); }
+
+/* 화면사이즈마다 다르게 적용되기 위함 */
+@media screen and (max-width: 1260px) { #main #estimate { font-size: 0.6em; } } /* 중간 크기의 글씨 */
+@media screen and (max-width: 900px) { 
+    #main #estimate { font-size: 0.4em; } /* 모바일의 글씨 크기 */
+    .block { width: 150px; height: 150px; font-size: 0.8em; margin: 2.5px; } /* 상호작용의 블록 선언 */
+}
+@media screen and (max-width: 720px){.block#in_email {width: 320px;}} /* 어느정도 크기 이하일 경우 이메일 블록의 크기를 변경 */

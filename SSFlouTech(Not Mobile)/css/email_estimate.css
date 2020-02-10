@@ -1,0 +1,88 @@
+/* 공통 css */
+#viewBox {
+    /* 이메일로 문의하기를 눌렀을 때 나오는 창 css */
+    white-space: nowrap;
+    text-align: left;
+    position: absolute;
+    top: 15%;
+    left: 100vw; /* 초기에 왼쪽에서 100vw(한 화면 전체)만큰 떨어뜨려놓음 */
+    transition-property: all; /* 애니메이션(opacity와 transform)을 적용 */
+    transition-duration: 0.5s; /* 애니메이션 실행 시간 */
+}
+.contentBox { box-shadow: 0px 5px 5px 3px #CCCCCC; } /* 공간 구분을 위해 그림자 처리 */
+.formatZone {
+    /* 글이 적혀있는(적을) 부분의 크기 */
+    width: 70%;
+    margin: auto;
+}
+.backspace:hover { cursor: pointer; } /* 뒤로 가기 버튼 */
+.subTitle {
+    /* 소제목 바의 css */
+    background-color: #125D7D;
+    color: white;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+/* 개인정보 제공 동의서 css */
+#personalInfoView {
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    transition-property: all; /* 애니메이션(opacity와 transform)을 적용 */
+    transition-duration: 0.5s; /* 애니메이션 실행 시간 */
+}
+.personalInfoContent { padding: 0px 10px; }
+#contentText {
+    /* 수집 이용 동의에 대한 설명이 적혀있는 box */
+    padding: 10px;
+    height: 600px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+/* 이메일 입력 양식 css */
+#emailView {
+    display: inline-block;
+    position: relative;
+    width: 100vw;
+    font-size: 20px;
+    transition-property: all; /* 애니메이션(opacity와 transform)을 적용 */
+    transition-duration: 0.5s; /* 애니메이션 실행 시간 */
+}
+form { padding: 0px 10px; }
+.inputBox {
+    /* 입력하는 모든 부분에 적용될 css */
+    width: calc(100% - 20px);
+    font-size: 15px;
+    padding: 10px;
+    padding-bottom: 5px;
+    border: none;
+    border-bottom: 2px solid #DCDCDC;
+}
+#content {
+    /* 내용을 적을 TextArea의 css */
+    height: 450px;
+    resize: none; /* textarea의 크기 변경이 불가능 하도록 선언 */
+}
+.inputBtn {
+    /* 클릭되는 모든 버튼에 적용될 css */
+    width: 100%;
+    background-color: #2D9E99;
+    font-size: 20px;
+    color: white;
+    padding: 5px 10px;
+    margin: 10px 0px;
+    border-radius: 10px;
+}
+.disable { background-color: #777777; } /* 버튼이 비활성화 됐을 때 나타낼 배경 설정 */
+label { position: relative; } /* 파일 업로드 부분의 css 적용을 위해서 대신 사용되는 label css */
+label:hover{ cursor: pointer; } /* 파일 업로드 역할을 대신 수행하기 위해 마우스 hover시 상호작용 모습 */
+.fileBtn {
+    /* 파일 버튼(이미지)의 크기와 위치 설정 */
+    position: absolute;
+    width: 75px;
+    top: 5px;
+    right: 10px;
+}
+#file { display: none; } /* 실제 input[type='text']는 보이지 않도록 선언 */

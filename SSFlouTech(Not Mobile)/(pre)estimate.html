@@ -1,0 +1,27 @@
+<!-- 견적 문의 페이지 -->
+<div class='title'>견적문의</div>
+<div class='card'>
+     <div class='card_image'>
+        <img src='images/card_call.svg'><br>CALL CENTER
+    </div>
+    <div class='card_font'>
+        회사 : 055 - 345 - 1192(3)<br>
+        팩스 : 055 - 345 - 1172<br>
+        메일 : ssfloutech@naver.com<br>
+    </div>
+    <hr>
+    <span class='response'>실시간 응답률</span><div class='responRate'>&nbsp</div>
+</div>
+<br>
+<form enctype='multipart/form-data' method='post' action="mail.php">
+    <input id='email' name='email' class='inputBox' type='email' placeholder='답장 받을 이메일' required><br>
+    <input id='user' name='user' class='inputBox' type='text' placeholder='작성자' required>
+    <input id='tel' name='tel' class='inputBox' type='tel' placeholder='연락처' required><br>
+    <textarea id='content' name='content' class='inputBox' placeholder='내용 작성' required></textarea><br>
+    <label for='file' name='file'>
+        <input id='fileName'class='inputBox' type='text' placeholder='파일 첨부' disabled>
+        <span class='fileBtn'>올리기</span>
+    </label>
+    <input id='file' name='file' type='file'><br>
+    <input class='inputBtn' type='submit' value='견적 문의하기'>
+</form>

@@ -1,0 +1,74 @@
+#main #intro_company{
+    padding: 10%;
+    text-align: center;
+}
+#main #intro_company strong { font-size: 35px; }
+#main #intro_company p { font-size: 30px; margin:0;}
+#main #intro_company .intro_company_logo { width: 300px; }
+#main #intro_company .intro_company_name { 
+    margin-bottom: 20px; 
+    font-size: 56px;
+    font-weight: bold; 
+}
+#main #intro_company .intro_company_block { 
+    color: white; 
+    display: inline-block;
+    position: relative;
+    margin: 50px;
+    margin-top: 5%;
+}
+@media screen and (min-width: 1870px) {
+    #main #intro_company{
+        padding-bottom: 20%;
+    }
+    #main #intro_company #right { 
+        position: relative;
+        top: 250px;
+    }
+}
+#main #intro_company .intro_company_block .company_info{ overflow: hidden; }
+#main #intro_company .intro_company_block .intro_company_big { 
+    text-align: right;
+    font-size: 70px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+#main #intro_company .intro_company_block .intro_company_small { 
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 20px;
+    position: absolute;
+    bottom: 20px;
+}
+#main #intro_company .intro_company_block #intro_company_know_how {
+    /* background: url('../images/20years.svg'); */
+    background: url('../images/intro_company/detail_coating.png');
+    position: relative;
+    width: 640px;
+    height: 640px;
+    margin-bottom: 100px;
+}
+#main #intro_company .intro_company_block #intro_company_teflon_ceramic {
+    /* background: url('../images/teflon_ceramic.svg'); */
+    background: url('../images/intro_company/teflon_ceramic.png');
+    position: relative;
+    width: 640px;
+    height: 640px;
+}
+
+#main #intro_company .intro_company_block #intro_company_korea_only {
+    /* background: url('../images/korea_only.svg'); */
+    background: url('../images/intro_company/20years.png');
+    position: relative;
+    width: 640px;
+    height: 640px;
+    margin-bottom: 100px;
+}
+#main #intro_company .intro_company_block #intro_company_big_product {
+    /* background: url('../images/big_product.svg'); */
+    background: url('../images/intro_company/big_product.png');
+    position: relative;
+    width: 640px;
+    height: 640px;
+}

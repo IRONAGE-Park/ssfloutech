@@ -1,0 +1,103 @@
+#main #estimate{
+    padding-top: 10%;
+    min-width: 450px;
+    background-color: #F3F3F3;
+    text-align: center;
+}
+#main #estimate .title{
+    font-size: 56px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#main #estimate .card{
+    display: inline-block;
+    background: linear-gradient(to right, #2D9E99, #176B8F);
+    color: white;
+    width: 415px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+    line-height: 30px;
+    border-radius: 10px;
+}
+#main #estimate .card .card_image {
+    display: inline-block;
+    margin-top: 10px;
+    margin-right: 20px;
+}
+#main #estimate .card .card_font{
+    float: right;
+    margin-top: 5px;
+    margin-right: 20px;
+    text-align: left;
+}
+#main #estimate .card .response{
+    font-size: 20px;
+}
+#main #estimate .card .responRate{
+    width: 230px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: center;
+    float: right;
+    margin-right: 10px;
+    padding-left: 10px;
+    line-height: 40px;
+    color: #1788AD;
+    font-size: 40px;
+}
+#main #estimate .inputBox{
+    width: 180px;
+    font-weight: bold;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 1px 5px 2px #C0C0C0;
+    line-height: 20px;
+    margin-right: 10px;
+    padding: 10px;
+}
+#main #estimate .inputBtn{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #33A495;
+    width: 415px;
+    margin-top: 30px;
+    margin-bottom: 10%;
+    margin-right: 10px;
+    line-height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+#main #estimate #email{
+    width: 395px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 30px;
+}
+#main #estimate #content{
+    width: 395px;
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    resize: none;
+}
+#main #estimate #file{ display:none; }
+#main #estimate label{ width: 400px; position:relative; left: 3px; }
+#main #estimate label .fileBtn{
+    position: absolute;
+    top: 0px;
+    right: 25px;
+    background-color: #33A495;
+    border-radius: 10px;
+    width: 100px;
+    height: 25px;
+    font-size: 15px;
+    color: white;
+    font-weight: bold;
+}
+#main #estimate #fileName{ width: 395px; outline:none; }
+#main #estimate #fileName:hover{ cursor: pointer; }

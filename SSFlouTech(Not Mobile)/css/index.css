@@ -1,0 +1,32 @@
+@import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
+html, body {
+    /* 이 문서에 공통적으로 적용되어야할 css */
+    /* 모든 폰트를 Noto Sans로 설정 */
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    
+    font-family: "Noto Sans KR", sans-serif !important;
+}
+
+/* 아이폰에서 버튼과 같은 요소의 기본 css를 제거하기 위함*/
+* { -webkit-appearance: none; } 
+
+#shade {
+    /* 음영 막에 대한 css */
+    z-index: 901;
+    background-color: rgba(50, 50, 50, 0.5);
+    position: fixed;
+    display: none;
+    top: 0; /* 고정된 위치를 지정하기 위함 */
+    width: 100vw;
+    line-height: 100vh;
+    text-align: center;
+}
+#imageViewerPopUp {
+    /* 음영 막 내부에 존재하는 이미지에 대한 css */
+    /* 이미지 수직 중앙 정렬을 위해 사용 */
+    vertical-align: middle;
+    width: 40vw;
+    height: 40vw;
+}

@@ -1,0 +1,45 @@
+#main #position {
+    /* 회사 소개와 제품 소개 사이의 회사 위치와 연락처 선언 부분 css */
+    width: 100%;
+    background: linear-gradient(to right, #2D9E99, #175A7D); /* 그라데이션 배경을 위한 선언 */
+    text-align: center;
+    text-shadow: 1px 2px 4px #222222; /* 모든 텍스트에 그림자 선언 */
+    color: white;
+    padding: 5% 0;
+    font-size: 24px;
+    font-weight: lighter;
+}
+#main #position .position_title {
+    /* 오시는 길과 연락처(제목) css */
+    font-size: 50px;
+    font-weight: normal;
+    margin-bottom: 40px;
+}
+#main #position .position_btn {
+    /* 지도에서 확인하기 버튼과 회사로 전화하기 버튼의 css */
+    margin-top: 60px;
+    margin-bottom: 50px;
+    color: white;
+    box-shadow: 1px 2px 4px #222222; /* 버튼의 이미지를 주기 위해 약간의 그림자 효과 선언 */
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    font-size: 18px;
+    outline: none;
+    border: 0;
+}
+#main #position .position_map #map_link { background-color: #1E8FA6; } /* 지도 버튼의 배경색 */
+#main #position .position_tel #call_link { background-color: #2D9E99; } /* 전화 버튼의 배경색 */
+#main #position .position_map { display: inline-block; }
+#main #position .position_map .position_map_info {
+    /* 주소가 입력되는 텍스트 css */
+    height: 80px; 
+    line-height: 80px;
+}
+#main #position .position_tel { display: inline-block; margin-left: 25%; }
+#main #position .position_tel .position_tel_info {
+    /* 전화번호가 입력되는 텍스트 css */
+    height: 80px; 
+    line-height: 50px;
+    text-align: left;
+}

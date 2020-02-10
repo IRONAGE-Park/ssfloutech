@@ -1,0 +1,24 @@
+#footer {
+    /* Footer의 전체적인 css 선언 */
+    min-width: 800px;
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 50px;
+    background-color: #F3F3F3;
+    position: relative;
+}
+#footer *{ vertical-align: middle; } /* footer 내의 요소들이 수직 중앙 정렬 되기 위해 선언 */
+#footer .footer_logo {
+    position: relative;
+    bottom: 10px;
+    font-size: 30px;
+    margin: 30px;
+}
+#footer .footer_logo .footer_image { width: 100px; }
+#footer .footer_info {
+    white-space: nowrap;
+    display: inline-block;
+    text-align: left;
+    font-size: 12px;
+}
+#footer .footer_info *{ margin: 5px; }

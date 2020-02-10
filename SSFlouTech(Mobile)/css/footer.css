@@ -1,0 +1,26 @@
+#footer {
+    /* Footer의 전체적인 css 선언 */
+    text-align: center;
+    padding: 5%;
+    padding-bottom: 50px;
+    background-color: #F3F3F3;
+    position: relative;
+}
+#footer *{ vertical-align: middle; } /* footer 내의 요소들이 수직 중앙 정렬 되기 위해 선언 */
+#footer .footer_logo {
+    position: relative;
+    bottom: 10px;
+    font-size: 2.5em;
+    margin: 30px;
+}
+#footer .footer_logo .footer_image { width: 100px; }
+#footer .footer_info {
+    display: inline-block;
+    text-align: left;
+}
+#footer .footer_info *{ margin: 5px; }
+
+/* 화면사이즈마다 다르게 적용되기 위함 */
+@media screen and (max-width: 1260px) { #footer { font-size: 0.6em; } } /* 중간 크기의 폰트 사이즈 설정 */
+@media screen and (max-width: 700px) { #footer { padding: 10% 0; } #footer .footer_info { text-align: center; } }
+

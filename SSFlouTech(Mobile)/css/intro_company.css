@@ -1,0 +1,53 @@
+#main #intro_company {
+    /* 회사 소개 페이지의 기본 css */
+    padding: 20% 0;
+    background-color: #F3F3F3;
+    text-align: center;
+    overflow: hidden; /* 범위 초과 시 열람 불가 */
+}
+.subText {
+    /* 제목 아래 작은 설명 css */
+    max-width: 95%;
+    width: 42em;
+    font-size: 2em;
+    line-height: 2em;
+    font-weight: 300;
+    margin: auto;
+    margin-bottom: 15%;
+}
+#main #intro_company .intro_company_logo { width: 30em; }
+.introCompanyBlock {
+    /* 회사 소개를 위한 요소들을 담은(이미지와 텍스트) 블록 css */
+    position: relative;
+    padding-bottom: 5%;
+}
+
+/* 블록 내부 이미지와 텍스트 css, 이미지를 기준으로 양측 상단부터 써내려감 */
+.introCompanyImage { width: 40%; vertical-align: top; }
+.introCompanyText {
+    display: inline-block;
+    width: 40%;
+    padding-top: 5%;
+}
+
+/* 화면사이즈마다 다르게 적용되기 위함 */
+@media screen and (max-width: 1260px) { #main #intro_company { font-size: 0.6em; } } /* 중간 크기의 폰트 설정 */
+@media screen and (max-width: 900px) {
+    #main #intro_company { font-size: 0.4em; }
+    #main #intro_company .subTitle { width: 90%; margin: auto; margin-bottom: 10%; }
+    .subText { font-size: 3em; }
+    .introCompanyBlock { width: 90%; margin: auto; }
+    .introCompanyText { 
+        /* 텍스트의 위치를 이미지 내부로 옮김 */
+        position: absolute;
+        display: block;
+        width: 90%;
+        height: 70vw;
+        top: 0;
+        padding: 5%;
+    }
+    .underLine { border: 2px solid #50BCAE; } /* 구분 선의 크기를 줄임 */
+    .introCompanyText { color: white; } /* 이미지 내부이기 때문에 글씨를 하얀색으로 변경 */
+    .introCompanyText .blockSubText { width: 90%; position: absolute; bottom: 0; font-size: 3em; }
+    .introCompanyImage { width: 100%; margin-bottom: 5em; }
+}

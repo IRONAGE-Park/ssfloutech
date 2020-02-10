@@ -1,0 +1,23 @@
+#main #intro_product {
+    /* 제품 소개의 전반적인 css */
+    width: 100%;
+    text-align: center;
+    overflow: hidden; /* 범위 초과 시 열람 불가능 */
+    padding: 20% 0;
+}
+#main #intro_product .product_list {
+    /* 제품 리스트 이미지가 들어갈 영역(좌우 스크롤) */ 
+    margin-top: 5%;
+    white-space: nowrap; /* 좌우 스크롤을 위해 줄바꿈 방지 */
+    overflow: scroll; /* 좌우 스크롤은 선언 */
+    overflow-y: hidden; /* 상하 스크롤을 삭제 */
+    padding-bottom: 20px;
+}
+
+/* 화면사이즈마다 다르게 적용되기 위함 */
+@media screen and (max-width: 1260px) { #main #intro_product { font-size: 0.6em; } } /* 중간 크기의 폰트 설정 */
+@media screen and (max-width: 900px) { 
+    #main #intro_product { font-size: 0.4em; } 
+    .productListImage { height: 180px; } /* 제품 이미지의 크기를 줄임 */
+    .productListFont { height: 30px; } /* 제품 이미지 아래 제품 명을 적은 글씨의 크기를 줄임  */
+}
