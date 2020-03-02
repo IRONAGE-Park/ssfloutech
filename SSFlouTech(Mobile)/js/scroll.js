@@ -1,12 +1,6 @@
 var count = false; // 단 한 번 퍼센트 설정을 위한 변수
 var date = new Date(); // 현재 날짜를 받아옴
 
-var rating = new Array(43, 40, 38, 33, 23, 12, 
-                        32, 56, 65, 70, 85, 89,
-                        85, 90, 92, 89, 85, 81,
-                        75, 70, 64, 55, 51, 48);
-                        // 각 시간에 따라 지정된 값을 배열에 저장. 인덱스가 시간.
-
 var preScroll = 0, // 이전 스크롤 위치
     delta = 0; // 현재 헤더의 델타 값
 
@@ -49,7 +43,7 @@ var eventScroll = function(e) {
     if (scroll >= $('#estimate').offset().top - $(window).height()) {
         // 견적문의 상위 일정 부분에 도달하면(아래로 내리면)
         if(count == false) {
-            var percent = rating[date.getHours()] + Math.floor(Math.random() * 5); // 현재 시간에 맞는 배열 값 + 랜덤 값으로 최대 5까지
+            var percent = 95 + Math.floor(Math.random() * 5); // 현재 시간에 맞는 배열 값 + 랜덤 값으로 최대 5까지
             // 시간에 따라 다른 퍼센트를 셋팅함
             count = countUp(percent); // 그 후 퍼센트만큼 숫자를 올리고
             moveUp(); // 아래 상호작용 메뉴를 나타나게 함
