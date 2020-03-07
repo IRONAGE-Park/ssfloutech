@@ -1,24 +1,14 @@
-<!-- footer
-<table width="100%" border="0" cellspacing="0" cellpadding="0">
-  <tr>
-    <td class="footer" align="center">
-      <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr align="center">
-          <td width="200">
-            <a href="javascipt:go_main()">
-              <img src="../img/footer/logo.svg" alt="logo">
-            </a>
-          </td>
-          <td class="footer_f02">
-            경기도 남양주시 식송1로 33-1, 1층 101호(별내동)<br>
-            TEL. 070-7844-1701~2&nbsp;&nbsp;&nbsp;FAX. 031-527-1703&nbsp;&nbsp;&nbsp;E-mail. the_f10@naver.com<br>
-            Copyright ⓒ 2014 the F.com. All Right Reserved.
-          </td>
-        </tr>
-      </table>
-    </td>
-  </tr>
-</table> -->
+<div id="footer"> 
+ <span class='footer_logo'>
+      <img class='footer_image' src='/images/logo.svg'>
+      <span class='logo_font'> (주) 에스에스플로텍</span>
+  </span>
+  <div class='footer_info'>
+      <div>주소 : 경남 김해시 한림면 김해대로 1402번길 37 &nbsp|&nbsp 사업자 등록 번호 : 615 - 81 - 18882 &nbsp|&nbsp 대표: 이재수</div>
+      <div>TEL : 055)&nbsp 345 - 1192(3) &nbsp|&nbsp FAX : 055)&nbsp 345 - 1172 &nbsp|&nbsp E-mail : ssfloutech@gmail.com</div>
+      <div>COPYRIGHT &nbsp(C)&nbsp SSFLOUTECH ALL RIGHT RESERVED</div>
+  </div>
+</div>
 </body>
 
 </html>

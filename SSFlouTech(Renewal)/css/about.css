@@ -6,14 +6,10 @@
 .about-content-stext { font-size: 1em;}
 .about-content-stext-top { font-size: 1.1em;}
 .about-content-stext-mid { font-size: 1em;}
-.about-content-stext-bot { font-size: 1.5em; }
 .about-emphasize { color: #072a49;}
 
 
-.about-content-blogo { width: 300px; }
-.about-content-slogo { width: 150px; }
-
-
+.about-content-blogo { width: 536px; }
 
 @media (max-width: 1024px) {
     .about-wrap, td { font-size: 12px; }

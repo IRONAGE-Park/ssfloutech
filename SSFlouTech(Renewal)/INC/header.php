@@ -41,9 +41,9 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel='stylesheet' type='text/css' href='../css/header.css'>
     <link rel="stylesheet" type="text/css" href="../css/banner.css">
+    <link rel="stylesheet" type="text/css" href="../css/footer.css">
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
 	<link rel="stylesheet" href="../css/about.css" type="text/css">
-	<link rel="stylesheet" href="../css/material.css" type="text/css">
 	<link rel="stylesheet" href="../css/photoview.css" type="text/css">
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<script language="JavaScript" type="text/javascript" src="../js/link.js"></script>

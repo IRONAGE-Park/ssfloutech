@@ -13,12 +13,6 @@ include "../admin/conf/conf_board.php";
     <td valign="top" class="content"><table width="100%" border="0" cellspacing="0" cellpadding="0">
      <tr>
       <td class="border-n">
-	  <table width="100%" border="0" cellspacing="0" cellpadding="0">
-        <tr>
-        <td><span class="list_tit">Q&amp;A</span></td>
-		</tr>
-	  </table>
-			<br>
 			<? 
 			if(($bmain=="view") or ($bmain=="modify")){
 
