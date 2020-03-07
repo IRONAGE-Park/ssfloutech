@@ -1,0 +1,19 @@
+#main #intro_product {
+    width: 100%;
+    text-align: center;
+    overflow: hidden; 
+    padding: 20% 0;
+}
+#main #intro_product .product_list {
+    margin-top: 5%;
+    white-space: nowrap; 
+    overflow: scroll; 
+    overflow-y: hidden; 
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 1260px) { #main #intro_product { font-size: 0.6em; } } 
+@media screen and (max-width: 900px) { 
+    #main #intro_product { font-size: 0.4em; } 
+    .productListImage { height: 180px; } 
+    .productListFont { height: 30px; } 
+}

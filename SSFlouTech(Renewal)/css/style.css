@@ -1,0 +1,179 @@
+@charset "utf-8";
+
+/*common*/
+@import url(https://cdn.jsdelivr.net/gh/moonspam/NanumSquare@1.0/nanumsquare.css);
+
+input, button {-webkit-border-radius: 0;-webkit-appearance:none;}
+
+body, td, th { margin:0; font-size: 14px; font-family: 'NanumSquare', sans-serif;}
+body {overflow-x: hidden;}
+img {border: none; vertical-align:middle}
+* { box-sizing: content-box; }
+ul,ol,li {list-style: none;}
+input[type="checkbox"] {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  position: relative;
+  top: 0; bottom: 0; right: 0; left: 0;
+  width: 20px; height: 20px;
+  transition: all 0.15s ease-out 0s;
+  background: #cbd1d8;
+  border: solid 2px #072a40;
+  color: #072a40;
+  cursor: pointer;
+  outline: none;
+  position: relative;
+}
+input[type="checkbox"]:hover { background: #9faab7; }
+input[type="checkbox"]:checked { background: #fff; }
+input[type="checkbox"]:checked::before {
+  height: 16px; width: 16px;
+  position: absolute;
+  content: '✔';
+  display: inline-block;
+  font-size: 15px;
+  text-align: center;
+  line-height: 16px;
+}
+input[type="checkbox"]:checked::after {
+  background: #fff;
+  content: '';
+  display: block;
+  position: relative;
+  z-index: 100;
+}
+
+.thef-button {
+  display: inline-block;
+  width: 80px;
+  line-height: 30px;
+  padding: 0 !important;
+  text-align: center;
+  box-shadow: 0px 1px 0px 2px #DDD;
+}
+.thef-button:hover {
+  text-decoration: none;
+  background-color: #eee;
+  color: #000 !important;
+}
+
+/*link*/
+a {text-decoration: none; color: #666}
+a:hover {text-decoration: underline; color: #000}
+a.main01 {font-size:17px; text-decoration: none; font-weight: bold; color: #333}
+a.main01:hover {font-size:17px; text-decoration: underline; font-weight: bold; color: #000}
+a.main02 {font-size:12px; text-decoration: none; color: #ff6600}
+a.main02:hover {font-size:12px; text-decoration: none; color: #ff6600}
+a.main03 {font-size:14px; text-decoration: none; color: #666; line-height:150%}
+a.main03:hover {font-size:14px; text-decoration: underline; color: #000; line-height:150%}
+a.file {font-size:14px; text-decoration: none; color: #ff6600}
+a.file:hover {font-size:14px; text-decoration: underline; color: #ff6600}
+
+/*form*/
+.select {height:23px; padding-top:2px; padding-left:2px; background-color:#f8f8f8; border:1px solid #D6D6D6; font-size:12px; color:#525252}
+.input {height:18px; padding-top:2px; padding-left:2px; background-color:#F8F8F8; border:1px solid #D6D6D6; font-size:12px; color:#525252}
+.input2 {width:236px; height:30px; padding-top:5px; padding-left:10px; background-color:#F8F8F8; border:1px solid #D6D6D6; font-size:30px; color:#525252; letter-spacing:-2px;}
+.textarea {padding:5px; background-color:#F8F8F8; border:1px solid #D6D6D6; font-size:12px; color:#525252; }
+.textarea2 {width:146px; height:30px; padding:5px; background-color:#000; border:1px solid #444; font-size:12px; color:#CCC}
+.checkbox {background-color:transparent; border:0px solid}
+.radio {background-color:transparent; border:0px solid}
+.phone_textarea {width:160px; height:80px; padding:3px; background-color:#161616; border:1px solid #646464; font-size:12px; color:#FFF}
+.phone_input {width:120px; height:19px; background-color:#161616; border:1px solid #646464; font-size:12px; color:#FFF}
+.phone_select {width:120px; height:19px; background-color:#161616; border:1px solid #646464; font-size:12px; color:#FFF}
+
+/*text*/
+.f11 {font-size: 11px}
+.f14 {font-size: 14px}
+.f16 {font-size: 16px}
+.c666 {color:#666}
+.c333 {color:#333}
+.b {font-weight:bold}
+
+.list_tit {font-size:50px; color:#072a40; font-weight:bold}
+.view_tit {padding:0 0 20px 0; font-size:23px; color:#072a40; font-weight:bold; letter-spacing:-2px;}
+.view_cont01 {padding:0 0 0 10px; font-size:13px; color:#666; line-height:160%}
+.view_thumb {padding:40px 0 50px 0}
+.view_detail {padding:30px 0}
+
+.border-b {padding: 0 0 10px 0; border-bottom:solid 1px #072a40}
+.border-n {padding: 40px 0;}
+.border-p {padding: 40px 0 0 0;}
+
+/*gnb*/
+.gnb {text-align:center; padding:0 40px}
+
+/*new products*/
+.newp {padding:50px 0 0 0}
+
+/*portfolio*/
+.port {padding:50px 0; background-color:#f3f3f3}
+
+/*footer*/
+.footer { border-top: solid 1px #999; padding:30px 40px;}
+a.footer_f01 {padding:0 20px 0 0; text-decoration: none; font-size: 13px; font-weight: bold; color: #999}
+a.footer_f01:hover {padding:0 20px 0 0; text-decoration: none; font-size: 13px; font-weight: bold; color: #fff}
+.footer_f02 {font-size: 12px; color: #645a58; line-height:150%; text-align:left; padding-left: 30px;}
+
+/*pagenum*/
+.sub02_numbox a {float:left; padding:4px 0 0 0; _height:20px; height:29px; width:29px; text-align:center; background-image:url(../img/numbg_out.gif); background-repeat:no-repeat; background-position:left top; color:#333; text-decoration:none; font-weight:bold;}
+.sub02_numbox a:hover, .nav a:active, .nav a.selected {float:left; padding:4px 0 0 0; _height:20px; height:29px; width:29px; text-align:center; background-image:url(../img/numbg_over.gif); background-repeat:no-repeat; background-position:left top; color:#fff; text-decoration:none; font-weight:bold;}
+
+.sub03_numbox a {float:left; padding:4px 0 0 0; _height:20px; height:29px; width:29px; text-align:center; background-image:url(../img/numbg_over.gif); background-repeat:no-repeat; background-position:left top; color:#333; text-decoration:none; font-weight:bold;}
+.sub03_numbox a:hover, .nav a:active, .nav a.selected {float:left; padding:4px 0 0 0; _height:20px; height:29px; width:29px; text-align:center; background-image:url(../img/numbg_over.gif); background-repeat:no-repeat; background-position:left top; color:#fff; text-decoration:none; font-weight:bold;}
+
+/*last border*/
+.last_border {padding:20px 0 100px 0; border-top:solid 1px #ccc}
+
+/*qna*/
+.qna_list01 {padding:15px 17px; background-color:#f8f8f8; border-top:solid 1px #281a18; border-bottom:solid 1px #ccc; color:#333; font-weight:bold}
+.qna_list02 {padding:12px 17px; border-bottom:solid 1px #ccc}
+.qna_reply {color:#ff9900}
+
+.qna_view01 {padding:12px 0 12px 20px; background-color:#f8f8f8; border-top:solid 1px #281a18; border-bottom:solid 1px #ccc}
+.qna_view02 {padding:12px 0 12px 20px; border-bottom:solid 1px #ccc}
+.qna_view02_01 {padding:30px 0 30px 20px; border-bottom:solid 1px #ccc; line-height:130%}
+.qna_view03 {background-color:#f8f8f8; padding:12px 0 12px 20px; border-bottom:solid 1px #281a18}
+.qna_view03_01 {background-color:#f8f8f8; padding:30px 0 30px 20px; border-bottom:solid 1px #281a18; line-height:130%}
+.qna_view_list01 {padding:12px 0 12px 20px; border-top:solid 1px #281a18; border-bottom:solid 1px #ccc}
+.qna_view_list02 {padding:12px 0 12px 20px; border-bottom:solid 1px #281a18}
+
+.qna_write01 {padding:12px 0 12px 20px; border-top:solid 1px #281a18; border-bottom:solid 1px #ccc}
+.qna_write02 {padding:12px 0 12px 20px; border-bottom:solid 1px #ccc}
+.qna_write03 {padding:12px 0 12px 20px; border-bottom:solid 1px #281a18}
+
+/*main visual*/
+.mainBanner{position:relative; width:2000px; height:480px; margin:0 auto; display:inline-block; z-index:1;}
+.mainBanner .mainSlide{position:absolute; width:2000px; height:480px; left:0; top:0;}
+.mainBanner .mainSlide a{position:absolute;}
+.mainBanner .btnPre{position:absolute; left:0; margin-left:10px; top:225px;}
+.mainBanner .btnNext{position:absolute; right:0; margin-right:10px; top:225px;}
+.mainBanner .paging{position:relative; margin-top:548px; width:1000px; height:20px; }
+.mainBanner .paging .paging_in{width:0px; height:11px; margin:0 auto;}
+.mainBanner .paging .paging_in a{vertical-align:middle; text-align:center; background:url('../images/main2/bg_paging.png') no-repeat 0 0; padding-left:18px;}
+.mainBanner .paging .paging_in a.active,.paging a:hover{ background-position:0 -16px}
+
+.visual-wrap{position:relative; height:480px;}
+.visual-wrap img, .mvisual-wrap img {width: 100%;}
+.mvisual-wrap {display: none}
+
+.visual-wrap .visual-posi, .mvisual-wrap .mvisual-posi {
+  position:absolute; top:0; left:0; display:none;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=0);
+  -khtml-opacity: 0;
+  -moz-opacity: 0;
+  opacity: 0;
+}
+@media (max-width: 830px) {
+  .qna-image {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .m_dis { display: none;}
+  .visual-wrap {display: none}
+  .mvisual-wrap {display: block;}
+}
