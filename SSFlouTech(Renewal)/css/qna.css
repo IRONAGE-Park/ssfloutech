@@ -1,0 +1,26 @@
+.qna-title {
+    font-weight: bold;
+    font-size: 2.2em;
+    line-height: 4em;
+}
+.qna-image-wrap {
+    margin-bottom: 100px;
+}
+.qna-image-box {
+    max-width: 370px;
+    line-height: 130px;
+    padding: 15px;
+    border-radius: 10px;
+    border: solid 4px #33A495;
+    position: relative;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+.left.qna-image-box { margin-right: auto; }
+.mid.qna-image-box { margin: auto; }
+.right.qna-image-box { margin-left: auto; }
+.qna-image-box-text {
+    padding-left: 15px;
+    color: #33A495;
+    font-size: 1.8em;
+}

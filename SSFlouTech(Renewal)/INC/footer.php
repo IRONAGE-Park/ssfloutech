@@ -1,6 +1,6 @@
 <div id="footer"> 
  <span class='footer_logo'>
-      <img class='footer_image' src='/images/logo.svg'>
+      <img class='footer_image' src='/img/logo/logo.svg'>
       <span class='logo_font'> (주) 에스에스플로텍</span>
   </span>
   <div class='footer_info'>

@@ -1,4 +1,9 @@
-<?php include "../INC/header.php"; ?>
+<?php
+	include "../INC/header.php";
+	$conf_tbanner['title'] = '설비현황';
+	$conf_tbanner['images'] = 'portfolio.png';
+	include "../INC/top_banner.php";
+?>
 <?
 ########## �Խ��Ǽ������� #########
 if (!$bmain) $bmain="list";

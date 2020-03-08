@@ -2,7 +2,7 @@
     width: 100%;
     height: 100vh;
     background-color: black;
-    background-image: url('../images/banner.png');
+    background-image: url('../img/banner.png');
     background-size: 100vw;
     background-repeat: no-repeat;
     background-position: left center;
@@ -43,6 +43,27 @@
     font-size: 0.8em;
     bottom: 20px; 
 }
+
+
+.tbanner-wrap {
+    background-color: #000;
+    background-position: right;
+    background-repeat: no-repeat;
+    width: 100%; height: 200px;
+}
+.tbanner-area { width: 100%; }
+.tbanner-content {
+    width: 100%; height: 60px;
+    max-width: 1374px;
+    margin: 0 50px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 3em;
+    text-align: left;
+}
+.tbanner-line {height: 100%;}
+.tbanner-title {padding-left: 20px;}
+
 @keyframes grow {
     0% { width: 75px; } 
     50% { width: 80px; } 

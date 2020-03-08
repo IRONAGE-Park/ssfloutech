@@ -40,8 +40,12 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
     <link rel='stylesheet' type='text/css' href='../css/header.css'>
+	<? if($mainpage) { ?> 
+		<link rel='stylesheet' type='text/css' href='../css/main_header.css'>
+	<? } ?>
     <link rel="stylesheet" type="text/css" href="../css/banner.css">
     <link rel="stylesheet" type="text/css" href="../css/footer.css">
+    <link rel="stylesheet" type="text/css" href="../css/qna.css">
 	<link rel="stylesheet" href="../css/style.css" type="text/css">
 	<link rel="stylesheet" href="../css/about.css" type="text/css">
 	<link rel="stylesheet" href="../css/photoview.css" type="text/css">
@@ -84,7 +88,7 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 							<tr class="sidebar-intro">
 								<td class="sidebar-content">
 									<h1>Introduce.</h1>
-									<img src="../img/logo/logo_8.svg"/>
+									<img src="../img/logo/logo.svg"/>
 								</td>
 							</tr>
 							<tr class="sidebar-nav">
@@ -133,7 +137,7 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 			<td align="middle" class="gnb-bg01">
 				<a href='/'>
 					<span class='header_logo'>
-						<img class='header_image' src='/images/logo.svg'>
+						<img class='header_image' src='/img/logo/logo.svg'>
 						<span class='logo_font'>에스에스플로텍</span>
 					</span>
 				</a>
