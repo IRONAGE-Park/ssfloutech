@@ -18,36 +18,36 @@
 	$result = $db->fetch_array( $query );
 	$rcount = count($result) ;
 ?>
-<table width="90%" align="center" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody>
 	<?
 		if ($rcount == 0) { echo "<div class='not-found'>Sorry, no posts matched your criteria.</div>"; }
         for ( $i=0 ; $i<$rcount ; $i++ ) {			
-		$link_page = "$_SERVER[PHP_SELF]?bmain=view&uid=".$result[$i]['uid'];
-		$my_fileadd_folder = $result[$i]['fileadd_folder'];
-		$dir = '../'.$result[$i]['fileadd_folder']."/banner";
-		// 핸들 획득
-		$handle  = opendir($dir);
-		
-		$files = array();
-		
-		// 디렉터리에 포함된 파일을 저장한다.
-		while (false !== ($filename = readdir($handle))) {
-			if($filename == "." || $filename == ".." || $filename == ".DS_Store"){
-				continue;
+			$link_page = "$_SERVER[PHP_SELF]?bmain=view&uid=".$result[$i]['uid'];
+			$my_fileadd_folder = $result[$i]['fileadd_folder'];
+			$dir = '../'.$result[$i]['fileadd_folder']."/banner";
+			// 핸들 획득
+			$handle  = opendir($dir);
+			
+			$files = array();
+			
+			// 디렉터리에 포함된 파일을 저장한다.
+			while (false !== ($filename = readdir($handle))) {
+				if($filename == "." || $filename == ".." || $filename == ".DS_Store"){
+					continue;
+				}
+				// 파일인 경우만 목록에 추가한다.
+				if(is_file($dir . "/" . $filename)){
+					$files[] = $filename;
+				}
 			}
-		 	// 파일인 경우만 목록에 추가한다.
-		 	if(is_file($dir . "/" . $filename)){
-				$files[] = $filename;
-			}
-		}
-		// 핸들 해제 
-		closedir($handle);
-		// 정렬, 역순으로 정렬하려면 rsort 사용
-		sort($files);
-		if(($td%2) == 0) {
-			echo("<tr>  ");
-		} 		
+			// 핸들 해제 
+			closedir($handle);
+			// 정렬, 역순으로 정렬하려면 rsort 사용
+			sort($files);
+			if(($td%2) == 0) {
+				echo("<tr>  ");
+			} 		
 	?>
 	<td class="portfolio-area">
 		<table align="center" class="portfolio-wrap" border="0" cellspacing="0" cellpadding="0">
@@ -62,17 +62,18 @@
 							}
 						?>
 							<div class="portfolio-title"><?=$common->cut_string($result[$i]['title'],43)?></div>
+							<div class="portfolio-content"><?=$common->cut_string($result[$i]['content'],43)?></div>
 						</div>
 					</a>
 				</td>
 			</tr>
 		</table>
 	</td>
-	<?
-		$td += 1;
-		if(($td%2) == 0) {
-			echo("</tr>");
-		}
-	}?>
+		<?
+			$td += 1;
+			if(($td%2) == 0) {
+				echo("</tr>");
+			}
+		}?>
 	</tbody>
 </table>

@@ -64,34 +64,29 @@
 .portfolio-wrap {
     position: relative;
     width: 95%;
-    margin: 10px auto;
-    opacity: 0.5;
     overflow: hidden;
     transition: all 0.4s;
 }
-.portfolio-wrap:hover { opacity: 1; }
-.portfolio-wrap:hover .portfolio-title { transform: translateX(0); }
 .portfolio-element {
     position: relative;
     overflow: hidden;
-    padding-top: 75%;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.portfolio-link:hover { text-decoration: none; }
+.portfolio-name {
+    padding-top: 100px;
+    padding-bottom: 50px;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+.portfolio-area { width: 33%; }
 .portfolio-title {
-    position: absolute;
-    width: 100%;
-    padding: 20px;
-    height: 20px;
-    top: 0;
-    bottom: 0;
-    left: 20%;
-    margin: auto;
-    font-size: 20px;
-    background-color: #fff;
-    transition: all 0.4s ease-in-out;
-    transform: translateX(100%);
+    font-size: 1.8em;
+    font-weight: bold;
+    padding: 20px 0;
+}
+.portfolio-content {
+    height: 250px;
 }
 .not-found {
     padding: 50px;
