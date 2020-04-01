@@ -18,8 +18,20 @@
 	$result = $db->fetch_array( $query );
 	$rcount = count($result) ;
 ?>
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
+<table width="100%" style="max-width: 1100px" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody>
+	<tr class="product-search">
+		<td class="product-search-wrapper">
+			<input class="product-search-bar" type="text" placeholder="제품검색" />
+		</td>
+		<td align="right" class="product-filter-wrapper">
+			<select class="product-filter-bar">
+				<option>전체</option>
+				<option>카테고리</option>
+				<option>카테고리</option>
+			</select>
+		</td>
+	</tr>
 	<?
 		if ($rcount == 0) { echo "<div class='not-found'>Sorry, no posts matched your criteria.</div>"; }
         for ( $i=0 ; $i<$rcount ; $i++ ) {			
@@ -45,24 +57,24 @@
 			closedir($handle);
 			// 정렬, 역순으로 정렬하려면 rsort 사용
 			sort($files);
-			if(($td%2) == 0) {
+			if(($td%4) == 0) {
 				echo("<tr>  ");
 			} 		
 	?>
-	<td class="portfolio-area">
-		<table align="center" class="portfolio-wrap" border="0" cellspacing="0" cellpadding="0">
+	<td class="product-area">
+		<table align="center" class="product-wrap" border="0" cellspacing="0" cellpadding="0">
 			<tr>
 				<td>
-					<a class="portfolio-link" href="<?=$link_page?>">
+					<a class="product-link" href="<?=$link_page?>">
+						<div class='product-element'>
 						<?
 							if($files[0]) {
-										echo "<div class='portfolio-element' style='background-image: url($dir/$files[0]);'>";
+										echo "<img class='product-image' src='$dir/$files[0]'>";
 							} else {
-										echo "<div class='portfolio-element' style='background-image: url($HOME_PATH/Bimg/no_image.gif);'>";
+										echo "<img class='product-image' src='$HOME_PATH/Bimg/no_image.gif'>";
 							}
 						?>
-							<div class="portfolio-title"><?=$common->cut_string($result[$i]['title'],43)?></div>
-							<div class="portfolio-content"><?=$common->cut_string($result[$i]['content'],43)?></div>
+							<div class="product-title"><?=$common->cut_string($result[$i]['title'],43)?></div>
 						</div>
 					</a>
 				</td>
@@ -71,9 +83,12 @@
 	</td>
 		<?
 			$td += 1;
-			if(($td%2) == 0) {
+			if(($td%4) == 0) {
 				echo("</tr>");
 			}
 		}?>
+		<tr class="product-paging">
+
+		</tr>
 	</tbody>
 </table>

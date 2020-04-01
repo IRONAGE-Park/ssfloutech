@@ -1,7 +1,7 @@
 <?php
- include_once ($_SERVER[DOCUMENT_ROOT]."/INC/get_session.php");
- include_once ($_SERVER[DOCUMENT_ROOT]."/INC/Function.php");
- include_once ($_SERVER[DOCUMENT_ROOT]."/INC/dbConn.php");
+ include_once ($_SERVER['DOCUMENT_ROOT']."/INC/get_session.php");
+ include_once ($_SERVER['DOCUMENT_ROOT']."/INC/Function.php");
+ include_once ($_SERVER['DOCUMENT_ROOT']."/INC/dbConn.php");
 
     $code = 0;
     $data = "";

@@ -12,8 +12,8 @@
 #header .header_logo .logo_font {font-size: 2em;}
 #header a { text-decoration: none; }
 #header .navi { float: right; } 
-#header .navi .navi_font { display: inline-block; margin: 0 25px; position: relative; font-size: 1.4em; }
-
+#header .navi .navi_font { display: inline-block; margin-left: 50px; position: relative; font-size: 1.4em; }
+.header-wrap { max-width: 1374px;}
 .header-area {width: 100%; height: 60px;}
 .header td {font-size: 20px;}
 .header-logo {height: 40px;}

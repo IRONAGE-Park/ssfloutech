@@ -13,7 +13,7 @@ include "../admin/conf/conf_post.php";
 <table class="photolist-content" width="100%" border="0" cellspacing="0" cellpadding="0">
 	<tr>
 		<td align="center" valign="top">
-			<table style="max-width: 1374px;" width="100%" border="0" cellspacing="0" cellpadding="0">
+			<table style="max-width: 1374px;" width="95%" border="0" cellspacing="0" cellpadding="0">
 				<tr>
 					<!--contents-->
 					<td valign="top" class="content">

@@ -16,7 +16,6 @@
     font-size: 3em;
     float: right;
     margin-top: 30vh;
-    margin-right: 10%;
 }
 #main #banner .banner_inter .btn{
     font-size: 0.6em;
@@ -25,7 +24,6 @@
     border-radius: 30px;
     border: 2px solid #50BCAE;
     width: 200px;
-    height: 50px;
     margin-top: 20vh;
     outline: none;
 }
@@ -36,12 +34,11 @@
     opacity: 0.7;
     cursor: pointer;
 }
-#main #banner .scroll_down {
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    font-size: 0.8em;
-    bottom: 20px; 
+#main #banner .banner-wrap {
+    position: relative;
+    width: 95%;
+    margin: auto;
+    max-width: 1374px;
 }
 
 
@@ -53,9 +50,8 @@
 }
 .tbanner-area { width: 100%; }
 .tbanner-content {
-    width: 100%; height: 60px;
+    width: 95%; height: 60px;
     max-width: 1374px;
-    margin: 0 50px;
     color: #fff;
     font-weight: bold;
     font-size: 3em;

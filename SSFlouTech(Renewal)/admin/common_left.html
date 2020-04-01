@@ -3,10 +3,6 @@
     <a class="admin-manage-sidebar-mtitle" href="javascript:0;" onclick="menuToggleSwitch(this);">CHANNEL</a>
     <ul class="admin-manage-sidebar-submenu">
       <li>
-        <? $conf_name = 'board' ?>
-        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=<?=$conf_name?>">Q & A</a>
-      </li>
-      <li>
         <? $conf_name = 'banner' ?>
         <a class="admin-manage-sidebar-stitle" href="../admin?c_name=<?=$conf_name?>">Banner</a>
       </li>
@@ -20,13 +16,14 @@
     <a class="admin-manage-sidebar-mtitle" href="javascript:0;" onclick="menuToggleSwitch(this);">POST</a>
     <ul class="admin-manage-sidebar-submenu">
       <li>
-        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=main">Material</a>
+        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=post">설비 현황</a>
       </li>
       <li>
-        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=post">Portfolio</a>
+        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=post1">제품 소개</a>
       </li>
       <li>
-        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=post1">Product</a>
+        <? $conf_name = 'board' ?>
+        <a class="admin-manage-sidebar-stitle" href="../admin?c_name=<?=$conf_name?>">견적 문의</a>
       </li>
     </ul>
   </div>

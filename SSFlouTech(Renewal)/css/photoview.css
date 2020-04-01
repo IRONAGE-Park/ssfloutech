@@ -1,18 +1,3 @@
-
-.material-image {
-    width: 200px;
-    height: 200px;
-}
-.product_menu {
-    text-decoration: none;
-    color: #072a40;
-    opacity: 0.6;
-}
-.product_menu:hover {
-    opacity: 1;
-    text-decoration: none;
-    color: #072a40;
-}
 .content-view-box {
     position: relative;
     width: 100%;
@@ -61,6 +46,28 @@
     display: inline-block;
     padding: 10px;
 }
+.product-search, .product-paging {
+    color:#2FA097;
+    height: 240px;
+}
+.product-image { width: 100%; }
+.product-element { width: 260px; }
+.product-title { text-align: center; }
+.product-search-bar {
+    font-size: 1.5em;
+    width: calc(100% - 50px);
+    border-radius: 10px;
+    border: solid 2px #2FA097;
+    padding: 10px 20px;
+}
+.product-search-bar::placeholder {color:#2FA097;}
+.product-filter-bar {
+    font-size: 1.5em;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: solid 2px #2FA097;
+    width: 50%;
+}
 .portfolio-wrap {
     position: relative;
     width: 95%;
@@ -81,12 +88,19 @@
 }
 .portfolio-area { width: 33%; }
 .portfolio-title {
+    width: 95%;
     font-size: 1.8em;
     font-weight: bold;
+    margin: auto;
     padding: 20px 0;
 }
+.portfolio-element-image {
+    width: 100%;
+}
 .portfolio-content {
-    height: 250px;
+    width: 95%;
+    margin: auto;
+    height: 150px;
 }
 .not-found {
     padding: 50px;
@@ -95,18 +109,12 @@
     font-size: 36px;
     opacity: 0.3;
 }
-.content-view-product-image {
-    width: 260px;
-}
+.content-view-product-image { width: 260px; }
 .content-view-product-name {
     padding-top: 20px;
     font-weight: bold;
 }
 @media (max-width: 1300px) {
-    .material-image {
-        width: 150px;
-        height: 150px;
-    }
     .content-view-image {
         width: 720px;
     }
@@ -134,10 +142,6 @@
 }
 
 @media (max-width: 1024px) {
-    .material-image {
-        width: 125px;
-        height: 125px;
-    }
     .list_tit {
         font-size: 36px;
     }
@@ -168,10 +172,6 @@
 }
 
 @media (max-width: 768px) {
-    .material-image {
-        width: 75px;
-        height: 75px;
-    }
     .portfolio-area {
         width: 100%;
         display: block;

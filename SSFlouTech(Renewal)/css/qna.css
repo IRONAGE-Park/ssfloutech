@@ -1,7 +1,8 @@
 .qna-title {
-    font-weight: bold;
+    padding-top: 100px;
+    padding-bottom: 50px;
     font-size: 2.2em;
-    line-height: 4em;
+    font-weight: bold;
 }
 .qna-image-wrap {
     margin-bottom: 100px;

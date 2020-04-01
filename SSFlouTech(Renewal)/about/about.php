@@ -7,7 +7,7 @@
 <table class="about-wrap" width="100%" border="0" cellspacing="0" cellpadding="0">
   <tr>
     <td align="center">
-      <table width="100%" style="max-width: 1374px;" class="about-intro">
+      <table width="95%" style="max-width: 1374px;" class="about-intro">
         <tr height="150"></tr>
         <tr>
           <td class="about-content">
@@ -43,7 +43,7 @@
   </tr>
   <tr>
     <td align="center">
-      <table width="100%" style="max-width: 1374px;" class="about-summary">
+      <table width="95%" style="max-width: 1374px;" class="about-summary">
         <tr>
           <td colspan="2" class="about-title">
             한 눈에 보는 에스에스플로텍
@@ -97,7 +97,7 @@
   </tr>
   <tr>
     <td align="center">
-      <table width="100%" style="max-width: 1374px;" class="about-position">
+      <table width="95%" style="max-width: 1374px;" class="about-position">
         <tr>
           <td colspan="2" class="about-title">
             찾아오시는 길

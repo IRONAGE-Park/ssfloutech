@@ -2,8 +2,8 @@
 ### 서버정보
 	$dbCon['dbHost'] = "localhost";
 	$dbCon['dbUid']  = "orangetla";
-	$dbCon['dbPw']   = "06yyuu14!";
-	$dbCon['db']     = "ssfloutech";
+	$dbCon['dbPw']   = "tla06yyuu14";
+	$dbCon['db']     = "orangetla";
 	$dbCon['charset']= "utf-8";
 	$SiteName = "ssfloutech";
 //(/home/hosting_users/fw_withu/www/

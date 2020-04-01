@@ -116,10 +116,10 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 							<tr class="sidebar-contact">
 								<td class="sidebar-content">
 									<h1>Contact.</h1>
-									<div class="sidebar-contact-address">경기도 남양주시 식송1로 33-1, 1층 101호(별내동)</div>
-									<div class="sidebar-contact-tel">TEL. 070-7844-1701~2</div>
-									<div class="sidebar-contact-fax">FAX. 031-527-1703</div>
-									<div class="sidebar-contact-email">E-mail. the_f10@naver.com</div>
+									<div class="sidebar-contact-address">경남 김해시 한림면 김해대로 1402번길 37</div>
+									<div class="sidebar-contact-tel">TEL. 055)345-1192(3)</div>
+									<div class="sidebar-contact-fax">FAX. 055)345-1172</div>
+									<div class="sidebar-contact-email">E-mail. ssfloutech@naver.com</div>
 								</td>
 							</tr>
 						</tbody>
@@ -132,7 +132,7 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 <table id="header" width="100%" border="0" cellspacing="0" cellpadding="0">
  <tr>
   <td align="center">
-	<table class="header-wrap" width="90%" border="0" cellspacing="0" cellpadding="0">
+	<table class="header-wrap" width="95%" border="0" cellspacing="0" cellpadding="0">
 		<tr>
 			<td align="middle" class="gnb-bg01">
 				<a href='/'>

@@ -95,7 +95,7 @@ function rmdir_all($dir) {
 			if ($tran_result == "1" ) {
 				$common->error("처리 되었습니다.","goto_no_alert","$_SERVER[PHP_SELF]?c_name=$c_name&bmain=list&conf=$conf");
 			} else {
-				$common->error("등록 실패 되었습니다","previous","");
+				$common->error("등록 실패 되었습니다"."INSERT INTO $tablename (uid,title,content,ref,fileadd_folder,reg_date) VALUES ('$new_uid','$title','$content','$ref','$directory','$reg_date')","previous","");
 			}
 		break;
 		case 'modify' :  
