@@ -105,10 +105,17 @@
         </tr>
         <tr>
           <td>
-            <a href='https://map.naver.com/?searchCoord=8b6669fa4b994291b97df4d504bd7903891c712aae788c9a2acfaf5b305d7abe&query=6rK97IOB64Ko64%2BEIOq5gO2VtOyLnCDquYDtlbTrjIDroZwgMTQwMuuyiOq4uCAzNw%3D%3D&menu=location&tab=1&lng=054a6bbd3dba63a93c3b63c07cba041b&mapMode=1&mpx=bd8305f0214dd8031ebdc333dc7a17d86b74db135a55e0d694a5aa28b712b96f785982994c54150714049bf17309b01eb132ebd550ccbfeeffd3e41633bc5787&lat=747d26bef79c5c45224ed1ec964c8278&dlevel=12&enc=b64'
-              target="_blank">
-              <img style="width: 100%" src="../img/map.png">
-            </a>
+            <!-- CONTACT-US KAKAO MAP API -->
+            <div class="contact-us-kakao-map-wrap">
+              <div id="contact-us-kakao-map"></div>
+              <!-- 지도 확대, 축소 컨트롤 div 입니다 -->
+              <div class="custom_zoomcontrol radius_border">
+                <span onclick="zoomIn()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_plus.png"
+                    alt="확대"></span>
+                <span onclick="zoomOut()"><img src="https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/ico_minus.png"
+                    alt="축소"></span>
+              </div>
+            </div>
           </td>
           <td>
             <div class="about-position-text">
@@ -122,4 +129,37 @@
   </tr>
   <tr height="100"></tr>
 </table>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=ca1e5d6a161cacfa0aa90a97d6f8c9d1"></script>
+<script>
+  var container = document.getElementById('contact-us-kakao-map'); //지도를 담을 영역의 DOM 레퍼런스
+  var options = { //지도를 생성할 때 필요한 기본 옵션
+    center: new kakao.maps.LatLng(35.27509232296432, 128.82484233856476), //지도의 중심좌표.
+    level: 3 //지도의 레벨(확대, 축소 정도)
+  };
+  var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+  map.addOverlayMapTypeId(kakao.maps.MapTypeId.HYBRID);
+  function zoomIn() {
+    map.setLevel(map.getLevel() - 1);
+  }
+  // 지도 확대, 축소 컨트롤에서 축소 버튼을 누르면 호출되어 지도를 확대하는 함수입니다
+  function zoomOut() {
+    map.setLevel(map.getLevel() + 1);
+  }
+  var marker = new kakao.maps.Marker({
+    // 지도 중심좌표에 마커를 생성합니다 
+    position: map.getCenter(),
+  });
+  // 지도에 마커를 표시합니다
+  marker.setMap(map);
+  var iwContent = '<div style="width: 150px; padding:5px; text-align: center;">에스에스플로텍</div>', // 인포윈도우에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+    iwPosition = new kakao.maps.LatLng(35.27509232296432, 128.82484233856476); // 인포윈도우 표시 위치입니다
+  // 인포윈도우를 생성합니다
+  var infowindow = new kakao.maps.InfoWindow({
+    position: iwPosition,
+    content: iwContent
+  });
+  // 마커 위에 인포윈도우를 표시합니다. 두번째 파라미터인 marker를 넣어주지 않으면 지도 위에 표시됩니다
+  infowindow.open(map, marker);
+</script>
+
 <?php include "../INC/footer.php"; ?>

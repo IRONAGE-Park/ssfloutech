@@ -143,7 +143,7 @@
 				<td><input type="text" name="reg_date" size="20" maxlength="70"
 						<?if($row_board['reg_date']){?>value="<?=$row_board['reg_date']?>"
 					<?} else {?>value="<?=date("Y-m-d H:i:s");?>"
-					<?}?> class="FORM1" readonly></td>
+					<?}?> class="FORM1"></td>
 			</tr>
 			<tr>
 				<td height="50">

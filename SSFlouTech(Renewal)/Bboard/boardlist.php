@@ -72,20 +72,26 @@
                         <tr>
                             <td width="33.3%">
                                 <div class="qna-image-box left">
-                                    <img src="../img/tel.svg">
-                                    <span class="qna-image-box-text">055 - 345 - 1192(3)</span>
+                                    <div class="qna-image-content">
+                                        <img src="../img/tel.svg">
+                                        <span class="qna-image-box-text">055 - 345 - 1192(3)</span>
+                                    </div>
                                 </div>
                             </td>
                             <td width="33.3%">
                                 <div class="qna-image-box mid">
-                                    <img src="../img/fax.svg">
-                                    <span class="qna-image-box-text">055 - 345 - 1172</span>
+                                    <div class="qna-image-content">
+                                        <img src="../img/fax.svg">
+                                        <span class="qna-image-box-text">055 - 345 - 1172</span>
+                                    </div>
                                 </div>
                             </td>
                             <td width="33.3%">
                                 <div class="qna-image-box right">
-                                    <img src="../img/email.svg">
-                                    <span class="qna-image-box-text">ssfloutech@naver.com</span>
+                                    <div class="qna-image-content">
+                                        <img src="../img/email.svg">
+                                        <span class="qna-image-box-text">ssfloutech@naver.com</span>
+                                    </div>
                                 </div>
                             </td>
                         </tr>
@@ -100,6 +106,7 @@
     <table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr>
             <td class="qna-title">게시판 문의하기</td>
+            <!--
             <td align="right">
                 <table border="0" cellspacing="5" cellpadding="0">
                     <tr>
@@ -118,6 +125,7 @@
                     </tr>
                 </table>
             </td>
+            -->
         </tr>
     </table>
     <tr>

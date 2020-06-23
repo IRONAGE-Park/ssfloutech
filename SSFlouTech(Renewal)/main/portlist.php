@@ -81,7 +81,7 @@
 				<table align="center" class="portfolio-wrap" border="0" cellspacing="0" cellpadding="0">
 					<tr>
 						<td>
-							<a class="portfolio-link" href="<?=$link_page?>">
+							<!--<a class="portfolio-link" href="<?=$link_page?>">-->
 								<div class='portfolio-element'>
 									<img class="portfolio-element-image" src="../upload/post/1.png">
 									<div class="portfolio-title">
@@ -91,7 +91,7 @@
 										2500 x 2300 x 4000<br>크기의 대형 오븐 2개 보유<br><br>1200 x 1200 x 1000<br>크기의 중형 오븐 2개 보유
 									</div>
 								</div>
-							</a>
+							<!--</a>-->
 						</td>
 					</tr>
 				</table>
@@ -100,7 +100,7 @@
 				<table align="center" class="portfolio-wrap" border="0" cellspacing="0" cellpadding="0">
 					<tr>
 						<td>
-							<a class="portfolio-link" href="<?=$link_page?>">
+							<!--<a class="portfolio-link" href="<?=$link_page?>">-->
 								<div class='portfolio-element'>
 									<img class="portfolio-element-image" src="../upload/post/2.png">
 									<div class="portfolio-title">
@@ -110,7 +110,7 @@
 										1200 x 500 x 23000<br>크기의 컨베이어 2개 및<br>자동화 시스템 보유
 									</div>
 								</div>
-							</a>
+							<!--</a>-->
 						</td>
 					</tr>
 				</table>
@@ -119,17 +119,17 @@
 				<table align="center" class="portfolio-wrap" border="0" cellspacing="0" cellpadding="0">
 					<tr>
 						<td>
-							<a class="portfolio-link" href="<?=$link_page?>">
+							<!--<a class="portfolio-link" href="<?=$link_page?>">-->
 								<div class='portfolio-element'>
 									<img class="portfolio-element-image" src="../upload/post/3.png">
 									<div class="portfolio-title">
-										자동화 샌딩 장비
+										자동화 스프레이 기계
 									</div>
 									<div class="portfolio-content">
-										자동 및 수동<br>대형 샌딩 장비 보유
+										자동화 코팅 설비 보유
 									</div>
 								</div>
-							</a>
+							<!--</a>-->
 						</td>
 					</tr>
 				</table>

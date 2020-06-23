@@ -9,13 +9,18 @@
 }
 .qna-image-box {
     max-width: 370px;
-    line-height: 130px;
-    padding: 15px;
+    height: 160px;
     border-radius: 10px;
     border: solid 4px #33A495;
     position: relative;
     white-space: nowrap;
     box-sizing: border-box;
+}
+.qna-image-content {
+    position: relative;
+    padding-left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 .left.qna-image-box { margin-right: auto; }
 .mid.qna-image-box { margin: auto; }

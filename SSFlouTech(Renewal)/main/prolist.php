@@ -1,5 +1,22 @@
 <?php
-    $get_field = escape_string($_REQUEST['find_field']);
+    
+	@extract($_GET); 
+	@extract($_POST); 
+
+		$doc_root = $_SERVER['DOCUMENT_ROOT'];
+		require_once($doc_root."/INC/get_session.php");
+		require_once($doc_root."/INC/dbConn.php");
+		require_once($doc_root."/INC/Function.php");
+		require_once($doc_root."/INC/arr_data.php");
+
+		require_once($doc_root."/INC/func_other.php");
+		require_once($doc_root."/INC/down.php");			//파일 다운로드
+
+	$url=$_SERVER["PHP_SELF"];
+	$file_arr=explode("/",$url);
+	$file_path=$file_arr[sizeof($file_arr)-1];
+	$file_path_1=$file_arr[sizeof($file_arr)-2];
+	include "../admin/conf/conf_post1.php";
     $get_word  = escape_string($_REQUEST['find_word'],'1');
 
     ///정렬
@@ -10,7 +27,10 @@
     }
 
     ///검색정보
-    $where_add ="";
+	$where_add ="";
+	if(!empty($get_word)){
+        $where_add .= " AND title like '%".$get_word."%'";
+    }
 
      /// 갯수뽑기용 쿼리
     $query = "SELECT * FROM  $tablename  WHERE 1 ".$where_add." ORDER BY ".$ORDER_BY;
@@ -18,20 +38,9 @@
 	$result = $db->fetch_array( $query );
 	$rcount = count($result) ;
 ?>
-<table width="100%" style="max-width: 1100px" align="center" border="0" cellspacing="0" cellpadding="0">
+
+<table width="100%" align="center" border="0" cellspacing="0" cellpadding="0">
 	<tbody>
-	<tr class="product-search">
-		<td class="product-search-wrapper">
-			<input class="product-search-bar" type="text" placeholder="제품검색" />
-		</td>
-		<td align="right" class="product-filter-wrapper">
-			<select class="product-filter-bar">
-				<option>전체</option>
-				<option>카테고리</option>
-				<option>카테고리</option>
-			</select>
-		</td>
-	</tr>
 	<?
 		if ($rcount == 0) { echo "<div class='not-found'>Sorry, no posts matched your criteria.</div>"; }
         for ( $i=0 ; $i<$rcount ; $i++ ) {			
@@ -65,18 +74,18 @@
 		<table align="center" class="product-wrap" border="0" cellspacing="0" cellpadding="0">
 			<tr>
 				<td>
-					<a class="product-link" href="<?=$link_page?>">
-						<div class='product-element'>
+					<!--<a class="product-link" href="<?=$link_page?>">-->
+						<div class='product-element' style="background-image:url(<?="'$dir/$files[0]'"?>)">
 						<?
 							if($files[0]) {
-										echo "<img class='product-image' src='$dir/$files[0]'>";
+								// echo "<img class='product-image' src='$dir/$files[0]'>";
 							} else {
-										echo "<img class='product-image' src='$HOME_PATH/Bimg/no_image.gif'>";
+								// echo "<img class='product-image' src='$HOME_PATH/Bimg/no_image.gif'>";
 							}
 						?>
-							<div class="product-title"><?=$common->cut_string($result[$i]['title'],43)?></div>
 						</div>
-					</a>
+						<div class="product-title"><?=$common->cut_string($result[$i]['title'],43)?></div>
+					<!--</a>-->
 				</td>
 			</tr>
 		</table>
