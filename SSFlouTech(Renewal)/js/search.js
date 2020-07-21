@@ -8,6 +8,14 @@ function close_search() {
 
 $(document).ready(function () {
 
+    $(".hamburger").click(function () {
+        $(".sidebar").toggleClass("is-active");
+        $(".shade").toggleClass("is-active");
+    });
+    $(".shade").click(function () {
+        $(this).toggleClass("is-active");
+        $(".sidebar").toggleClass("is-active");
+    });
     let input_product_search = document.querySelector('#product-search')
     let search_result = document.querySelector('#search-result')
     input_product_search.addEventListener('keyup', function (e) {
@@ -30,13 +38,5 @@ $(document).ready(function () {
 
         });
     })
-    $(".hamburger").click(function () {
-        $(".sidebar").toggleClass("is-active");
-        $(".shade").toggleClass("is-active");
-    });
-    $(".shade").click(function () {
-        $(this).toggleClass("is-active");
-        $(".sidebar").toggleClass("is-active");
-    });
 
 });
