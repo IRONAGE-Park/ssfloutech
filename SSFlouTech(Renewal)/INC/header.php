@@ -64,7 +64,17 @@ $file_path_1=$file_arr[sizeof($file_arr)-2];
 	<script language="JavaScript" type="text/javascript" src="../js/slider3.js"></script>
 	<script type="text/javascript" src="<?=$PATH_INFO?>/ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="<?=$PATH_INFO?>/js/head.js"></script>
-<script src="../js/search.js"></script>
+	<script src="../js/search.js"></script>
+	
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-LM2B881S04"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'G-LM2B881S04');
+	</script>
 </head>
 
 <body>
